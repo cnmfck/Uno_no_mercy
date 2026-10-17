@@ -1,4 +1,5 @@
 """有图形显示时执行真实 Tk 控件冒烟测试；无显示环境明确跳过。"""
+import gc
 import unittest
 import tkinter as tk
 from engine import Game, make_deck
@@ -46,6 +47,8 @@ class GuiSmokeTests(unittest.TestCase):
         finally:
             if app and app.client:
                 app.client.close()
+            app = None
+            gc.collect()
             root.destroy()
 
 
