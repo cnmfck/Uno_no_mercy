@@ -16,6 +16,12 @@ The current game interface, in-game messages, and many source comments are in Si
 - **Reconnect support:** disconnected players can reclaim their seats from the same application window, or the host can assign their seats to bots.
 - **Separate game engine, networking, and presentation:** the rules can be tested without opening the GUI.
 
+## Desktop Release Packages
+
+Native packages are built for Windows x64, Intel macOS, Apple Silicon macOS, and Linux x64. They bundle Python and Tcl/Tk. Download the archive matching your system from the repository's Releases page once a build has been published, extract it completely, and follow `START_HERE.txt`.
+
+See [RELEASE_GUIDE.md](RELEASE_GUIDE.md) to build or publish these packages and [RELEASE_NOTES.md](RELEASE_NOTES.md) for platform details. The source-launch instructions below require a separate Python installation.
+
 ## Quick Start
 
 Download and extract the repository, then open the folder containing `main.py`.
