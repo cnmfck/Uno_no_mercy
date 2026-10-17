@@ -1,0 +1,2 @@
+# 无第三方依赖，不需要执行 pip install。
+# Python 3.10+，包含 tkinter（通常随 Windows 官方安装程序附带）。
